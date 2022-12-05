@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+---- Anime Video Thing ---- 
+1. Filter component
+2. Search filter component
+3. Description component
+4. Favorite/Bookmark feature (within the description)
+5. Dropdown menu of the favorites
+6. Top 10 Anime (it's own separate section)
