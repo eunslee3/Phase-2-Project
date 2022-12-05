@@ -1,24 +1,21 @@
 import './App.css';
-import React, {useState} from 'react'
-import axios from 'axios'
+import React, {useState, useEffect} from 'react'
+
+const animesApi = "https://api.jikan.moe/v4/anime"
 
 function App() {
-  const [data, setData] = useState([])
-  function componentDidMount() {
-    axios
-    .get("https://fakerestapi.azurewebsites.net/api/Authors", {
-      "Content-Type": "application/xml; charset=utf-8"
-     })
+  const [animeList, setAnimeList] = useState([])
+
+  useEffect(() => {
+    fetch(animesApi)
     .then(r => r.json())
-    .then(data => console.log(data))
-    .catch(function(error) {
-      console.log(error);
-    });
-  }
+    .then(data => setAnimeList(data))
+  }, [])
+
+  console.log(animeList)
+
   return (
-    <div className="App">
-      {componentDidMount()}
-    </div>
+    <div className="App">Anime</div>
   );
 }
 
