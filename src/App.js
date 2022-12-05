@@ -13,8 +13,10 @@ function App() {
     .then(data => console.log(data))
     .catch(function(error) {
       console.log(error);
+      console.log(error.message)
     });
   }
+
   return (
     <div className="App">
       {componentDidMount()}
@@ -23,3 +25,4 @@ function App() {
 }
 
 export default App;
+
