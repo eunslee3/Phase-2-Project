@@ -12,6 +12,8 @@ function App() {
     .then(data => setAnimeList(data))
   }, [])
 
+  // Please work
+
   return (
     <div className="App">Anime</div>
   );
