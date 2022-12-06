@@ -133,7 +133,7 @@ button {
 /* {
   box-Sizing: border-box;
 } */
-/* body {
+body {
   margin: 0;
 }
 .nav {
@@ -168,4 +168,10 @@ background-color: black;
 }
 .nav li.hover {
   background-color: red;
-  } */
+  }
+h1 {
+  color: red
+}
+label{
+  color:white
+}
