@@ -130,6 +130,7 @@ button {
 .recommended-container::-webkit-scrollbar {
   display: none;
 }
+
 /* {
   box-Sizing: border-box;
 } */
@@ -174,4 +175,9 @@ h1 {
 }
 label{
   color:white
+
+
+.nav {
+    display: flex;
+
 }
