@@ -1,3 +1,86 @@
+body {
+    /* background-color: #232b2b; */
+    margin: 0;
+    display: flex;
+    background-color: #232B2B;
+}
+
+#hero-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .2rem;
+    font-size: 5em;
+}
+
+.hero-image {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: cover;
+    background-position: 50% 50%;
+    background-image: url("https://wallpapercave.com/wp/wp5396661.jpg");
+    padding-top: 0;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* ------------------- main page styling ------------------- */
+
+.anime-card {
+    display: column;
+    height: 200px;
+    width: 150px;
+    border: 2px solid white;
+    margin: 2%
+}
+
+.anime-card-image {
+    width: 150px;
+    height: 200px;
+}
+
+#anime-card-category {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: -30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #4CAF50;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+
+/* #see-more {
+    text-align: right;
+} */
+
+#anime-card-title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
 .anime-container {
-  
+    display:flex;
+    flex-direction: row;
 }
