@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from './navigationBar/NavBar'
 
 function Header() {
   return (
@@ -9,6 +10,7 @@ function Header() {
         ༼ つ ◕_◕ ༽つ🍰🍔🍕 "૮₍  ˶•⤙•˶ ₎ა
         </span>
       </h1>
+      <NavBar />
     </header>
   );
 }
