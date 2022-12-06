@@ -54,13 +54,9 @@ function renderRecommendedAnime() {
       <Search setSearch={setSearch}/>
       <HeroImage getStarted={getStarted} setGetStarted={setGetStarted}/>
       <AnimeForm />
-      <NavBar />
       <MainContainer animeList={filteredAnimeCard}
       setRecommendedAnimes={setRecommendedAnimes} 
       recommendedAnimes={recommendedAnimes} /> 
-
-
-  
     </div>
   );
 }
