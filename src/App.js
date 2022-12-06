@@ -1,28 +1,30 @@
-import './App.css';
-import React, {useState} from 'react'
-import axios from 'axios'
+import './index.css';
+import React, {useState, useEffect} from 'react'
+import HeroImage from './components/HeroImage'
+import MainContainer from './components/MainContainer'
+import Header from './components/Header'
+
+const animesApi = "https://api.jikan.moe/v4/anime"
 
 function App() {
-  const [data, setData] = useState([])
-  function componentDidMount() {
-    axios
-    .get("https://fakerestapi.azurewebsites.net/api/Authors", {
-      "Content-Type": "application/xml; charset=utf-8"
-     })
+  const [animeList, setAnimeList] = useState([])
+  const [getStarted, setGetStarted] = useState(false)
+
+  useEffect(() => {
+    fetch(animesApi)
     .then(r => r.json())
-    .then(data => console.log(data))
-    .catch(function(error) {
-      console.log(error);
-      console.log(error.message)
-    });
-  }
+    .then(data => setAnimeList(data.data))
+  }, [])
+
+  console.log(animeList)
 
   return (
-    <div className="App">
-      {componentDidMount()}
+    <div>
+      <Header />
+      <HeroImage getStarted={getStarted} setGetStarted={setGetStarted}/>
+      <MainContainer animeList={animeList}/> 
     </div>
   );
 }
 
 export default App;
-
