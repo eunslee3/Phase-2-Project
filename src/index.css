@@ -3,6 +3,12 @@ body {
     margin: 0;
     display: flex;
     background-color: #232B2B;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #hero-title {
@@ -54,7 +60,13 @@ button {
     height: 200px;
     width: 150px;
     border: 2px solid white;
-    margin: 2%
+    margin: 1%;
+    margin-top: 2%;
+    transition: transform 450ms;
+}
+
+.anime-card:hover {
+    transform: scale(1.08);
 }
 
 .anime-card-image {
@@ -81,6 +93,13 @@ button {
 }
 
 .anime-container {
-    display:flex;
-    flex-direction: row;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+.anime-container::-webkit-scrollbar {
+    display: none;
 }
