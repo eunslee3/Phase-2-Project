@@ -1,23 +1,20 @@
 body {
-
-  /* background-color: #232b2b; */
+  /* background-color: #232B2B; */
   margin: 0;
   display: flex;
   background-color: #232B2B;
   overflow-y: scroll;
   overflow-x: hidden;
+  /* width: 900px; */
 }
-
 body::-webkit-scrollbar {
   display: none;
 }
-
 #hero-title {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: .2rem;
   font-size: 5em;
 }
-
 .hero-image {
   height: 100vh;
   width: 100vw;
@@ -28,7 +25,6 @@ body::-webkit-scrollbar {
   background-image: url("https://wallpapercave.com/wp/wp5396661.jpg");
   padding-top: 0;
 }
-
 .overlay {
   position: absolute;
   height: 100%;
@@ -42,7 +38,6 @@ body::-webkit-scrollbar {
   justify-content: center;
   flex-direction: column;
 }
-
 button {
   background-color: #4CAF50;
   border: none;
@@ -52,31 +47,24 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
 }
-
 /* ------------------- main page styling ------------------- */
-
 .anime-card {
-
   display: column;
   height: 200px;
   width: 150px;
   border: 2px solid white;
-  margin: 1%;
-  margin-top: 2%;
+  margin: 10px;
+  margin-top: 50px;
   transition: transform 450ms;
 }
-
 .anime-card:hover {
   transform: scale(1.08);
 }
-
 .anime-card-image {
   width: 150px;
   height: 200px;
 }
-
 #anime-card-category {
   margin-top: 40px;
   margin-left: 30px;
@@ -85,46 +73,74 @@ button {
   color: #4CAF50;
   text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
 }
-
 /* #see-more {
   text-align: right;
 } */
-
 #anime-card-title {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
-
 .anime-container {
   display: flex;
+  float: left;
   overflow-y: hidden;
   overflow-x: scroll;
   margin-bottom: 50px;
   padding-bottom: 100px;
 }
-
 .anime-container::-webkit-scrollbar {
   display: none;
 }
-
-h1{
- color: red
+.top-rated-card {
+  display: column;
+  height: 250px;
+  width: 200px;
+  border: 2px solid white;
+  margin: 0.5%;
+  margin-top: 2%;
+  transition: transform 450ms;
 }
-
-label{
-  color:white
+.top-rated-card:hover {
+  transform: scale(1.08);
 }
-{
+.top-rated-card-image {
+  width: 200px;
+  height: 250px;
+}
+.top-rated-container {
+  display: flex;
+  float: left;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+}
+.top-rated-container::-webkit-scrollbar {
+  display: none;
+}
+.recommended-container {
+  display: flex;
+  float: left;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+  width: 10000px;
+}
+.recommended-container::-webkit-scrollbar {
+  display: none;
+}
+/* {
   box-Sizing: border-box;
-}
-body {
+} */
+/* body {
   margin: 0;
 }
 .nav {
   background-color: red ;
   color: white;
   display: flex;
-  /* justify-content: space-between; */
+ 
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
@@ -152,4 +168,4 @@ background-color: black;
 }
 .nav li.hover {
   background-color: red;
-  }
+  } */

@@ -15,9 +15,7 @@ function NavBar() {
             </ul>
         </nav>
 
-        <div className="nav-bar">
-        </div>
-
+        
     )
 }
 
