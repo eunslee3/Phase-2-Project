@@ -1,14 +1,14 @@
 import React from 'react'
-import AnimeCard from './AnimeCard'
+import TopRatedCard from './TopRatedCard'
 
 function TopRatedContainer({animeList}) {
-    const renderAnimeCard = animeList.map((anime) => {
+    const renderAnimeCard = animeList?.map((anime) => {
         const genre = anime.genres.map((genre) => {
             return genre.name
         })
         if(anime.score >= 8.0) {
             return (
-                <AnimeCard 
+                <TopRatedCard 
                     title={anime.title_english}
                     backupTitle={anime.title}
                     airing={anime.airing}
@@ -22,6 +22,9 @@ function TopRatedContainer({animeList}) {
                 />
             )
         }
+        else {
+            return null
+        }
     })
     return (
         <div>
@@ -29,7 +32,7 @@ function TopRatedContainer({animeList}) {
             {/* <div id="see-more">
                 <h3>See More</h3>
             </div> */}
-            <div className="anime-container">
+            <div className="top-rated-container">
                 {renderAnimeCard}
             </div>
         </div>

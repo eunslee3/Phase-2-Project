@@ -60,8 +60,8 @@ button {
     height: 200px;
     width: 150px;
     border: 2px solid white;
-    margin: 1%;
-    margin-top: 2%;
+    margin: 10px;
+    margin-top: 50px;
     transition: transform 450ms;
 }
 
@@ -94,6 +94,7 @@ button {
 
 .anime-container {
     display: flex;
+    float: left;
     overflow-y: hidden;
     overflow-x: scroll;
     margin-bottom: 50px;
@@ -101,5 +102,38 @@ button {
 }
 
 .anime-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.top-rated-card {
+    display: column;
+    height: 250px;
+    width: 200px;
+    border: 2px solid white;
+    margin: 0.5%;
+    margin-top: 2%;
+    transition: transform 450ms;
+}
+
+.top-rated-card:hover {
+    transform: scale(1.08);
+}
+
+.top-rated-card-image {
+    width: 200px;
+    height: 250px;
+}
+
+.top-rated-container {
+    display: flex;
+    float: left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+.top-rated-container::-webkit-scrollbar {
     display: none;
 }
