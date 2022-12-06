@@ -17,6 +17,7 @@ function AnimeContainer({animeList}) {
                 image={anime.images.webp}
                 status={anime.status}
                 score={anime.score}
+                id={anime.mal_id}
             />
         )
     })
