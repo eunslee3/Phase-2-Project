@@ -1,19 +1,27 @@
-import './App.css';
+import './index.css';
 import React, {useState, useEffect} from 'react'
+import HeroImage from './components/HeroImage'
+import MainContainer from './components/MainContainer'
 
 const animesApi = "https://api.jikan.moe/v4/anime"
 
 function App() {
   const [animeList, setAnimeList] = useState([])
+  const [getStarted, setGetStarted] = useState(false)
 
   useEffect(() => {
     fetch(animesApi)
     .then(r => r.json())
-    .then(data => setAnimeList(data))
+    .then(data => setAnimeList(data.data))
   }, [])
 
+  console.log(animeList)
+
   return (
-    <div className="App">Anime</div>
+    <div>
+      <HeroImage getStarted={getStarted} setGetStarted={setGetStarted}/>
+      <MainContainer animeList={animeList}/> 
+    </div>
   );
 }
 
