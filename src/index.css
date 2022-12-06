@@ -5,6 +5,7 @@ body {
     background-color: #232B2B;
     overflow-y: scroll;
     overflow-x: hidden;
+    /* width: 900px; */
 }
 
 body::-webkit-scrollbar {
@@ -135,5 +136,19 @@ button {
 }
 
 .top-rated-container::-webkit-scrollbar {
+    display: none;
+}
+
+.recommended-container {
+    display: flex;
+    float: left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+    width: 10000px;
+}
+
+.recommended-container::-webkit-scrollbar {
     display: none;
 }
