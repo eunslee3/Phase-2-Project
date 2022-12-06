@@ -4,7 +4,7 @@ function AnimeForm(){
 
     return(
         <div>
-            HELLO
+           
         </div>
     )
 }
