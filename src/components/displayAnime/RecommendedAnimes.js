@@ -11,6 +11,8 @@ function RecommendedAnimes({animeList, recommendedAnimes}) {
     console.log(recommendedAnimes)
 
     const renderAnimeCard = recommendedAnimes?.map((anime) => {
+
+
         return (
             <RecommendedAnimeCard 
                 title={anime.title_english}
@@ -29,7 +31,11 @@ function RecommendedAnimes({animeList, recommendedAnimes}) {
     return (
         <div>
             <h2 id="anime-card-category">Recommended Animes</h2>
+
+            <div className="anime-container">
+
             <div className="recommended-container">
+
                 {renderAnimeCard}
             </div>
         </div>

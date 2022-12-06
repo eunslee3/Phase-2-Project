@@ -12,6 +12,7 @@ function MainContainer({animeList, recommendedAnimesApi, setRecommendedAnimes, r
             />
             <TopRatedContainer animeList={animeList}/>
             <AnimeContainer animeList={animeList}/>
+
         </div>
     )
 }

@@ -3,6 +3,13 @@ import React, {useState, useEffect} from 'react'
 import HeroImage from './components/displayAnime/HeroImage'
 import MainContainer from './components/displayAnime/MainContainer'
 
+import Header from './components/Header'
+import Search from './components/Search'
+import AnimeForm from './components/displayAnime/AnimeForm'
+import NavBar from './components/navigationBar/NavBar'
+
+
+
 const animesApi = "https://api.jikan.moe/v4/anime"
 const recommendedAnimesApi = "https://api.jikan.moe/v4/recommendations/anime"
 
@@ -11,49 +18,49 @@ function App() {
   const [recommendedAnimes, setRecommendedAnimes] = useState([])
   const [getStarted, setGetStarted] = useState(false)
 
-  // useEffect(() => {
-  //   Promise.all([
-  //     fetch(animesApi),
-  //     fetch(recommendedAnimesApi),
-  //   ])
-  //   .then(([resAnimes, resRecommended]) => 
-  //     Promise.all([resAnimes.json(), resRecommended.json()])
-  //   )
-  //   .then(([dataAnimes, dataRecommended]) => {
-  //     setAnimeList(dataAnimes)
-  //     setRecommendedAnimes(dataRecommended.data)
-  //   })
-  // }, [])
+  const [search, setSearch] = useState("")
 
-    function renderRecommendedAnime() {
-      fetch(recommendedAnimesApi)
-      .then(r => r.json())
-      .then(data => setRecommendedAnimes(data.data))
-    }
+  const filteredAnimeCard = animeList.filter((anime) => 
+    anime.title.toLowerCase().includes(search.toLowerCase()))
+    
+// console.log(search)
+// console.table(filteredAnimeCard)
+  
 
-     useEffect(() => {
-        fetch(animesApi)
-        .then(r => r.json())
-        .then(data => {
-          setAnimeList(data.data)
-          renderRecommendedAnime()
-        })
-      }, [])
+function renderRecommendedAnime() {
+  fetch(recommendedAnimesApi)
+  .then(r => r.json())
+  .then(data => setRecommendedAnimes(data.data))
+}
 
-      // useEffect(() => {
-      //   fetch(recommendedAnimesApi)
-      //   .then(r => r.json())
-      //   .then(data => setRecommendedAnimes(data))
-      // }, [])
-
+ useEffect(() => {
+    fetch(animesApi)
+    .then(r => r.json())
+    .then(data => {
+      setAnimeList(data.data)
+      renderRecommendedAnime()
+    })
+  }, [])
+  let component
+  switch(window.location.pathname) {
+    case "/":
+      break
+      case "about":
+        break
+  }
   return (
     <div>
+      <Header />
+      <Search setSearch={setSearch}/>
       <HeroImage getStarted={getStarted} setGetStarted={setGetStarted}/>
-      <MainContainer 
-        setRecommendedAnimes={setRecommendedAnimes} 
-        recommendedAnimes={recommendedAnimes} 
-        animeList={animeList}
-      /> 
+      <AnimeForm />
+      <NavBar />
+      <MainContainer animeList={filteredAnimeCard}
+      setRecommendedAnimes={setRecommendedAnimes} 
+      recommendedAnimes={recommendedAnimes} /> 
+
+
+  
     </div>
   );
 }
