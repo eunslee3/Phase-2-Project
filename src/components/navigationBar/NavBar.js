@@ -2,6 +2,7 @@ import React from 'react';
 
 function NavBar() {
     return (
+
         <nav className="nav">
             <a href="/" className="site-title">Anime Bar</a>
             <ul>
@@ -13,6 +14,10 @@ function NavBar() {
                 </li>
             </ul>
         </nav>
+
+        <div className="nav-bar">
+        </div>
+
     )
 }
 

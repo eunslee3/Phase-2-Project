@@ -1,4 +1,5 @@
 body {
+
   /* background-color: #232b2b; */
   margin: 0;
   display: flex;
@@ -51,11 +52,13 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+
 }
 
 /* ------------------- main page styling ------------------- */
 
 .anime-card {
+
   display: column;
   height: 200px;
   width: 150px;
