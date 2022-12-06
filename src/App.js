@@ -1,5 +1,6 @@
-import './App.css';
+import './index.css';
 import React, {useState, useEffect} from 'react'
+import AnimeContainer from './components/AnimeContainer'
 
 const animesApi = "https://api.jikan.moe/v4/anime"
 
@@ -12,10 +13,10 @@ function App() {
     .then(data => setAnimeList(data))
   }, [])
 
-  // Please work
+  console.log(animeList)
 
   return (
-    <div className="App">Anime</div>
+    <AnimeContainer />
   );
 }
 
