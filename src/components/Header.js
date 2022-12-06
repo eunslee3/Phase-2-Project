@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <h1>
-      AnimeFlix
+      AnimeFlix UwU
         <span className="logo" role="img">
         ༼ つ ◕_◕ ༽つ🍰🍔🍕 "૮₍  ˶•⤙•˶ ₎ა
         </span>

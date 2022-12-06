@@ -2,6 +2,7 @@ import React from 'react'
 import AnimeCard from './AnimeCard'
 
 function AnimeContainer({animeList}) {
+   
     const renderAnimeCard = animeList.map((anime) => {
         const genre = anime.genres.map((genre) => {
             return genre.name
@@ -29,6 +30,7 @@ function AnimeContainer({animeList}) {
             </div> */}
             <div className="anime-container">
                 {renderAnimeCard}
+               
             </div>
         </div>
     )
