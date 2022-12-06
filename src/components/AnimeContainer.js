@@ -10,6 +10,7 @@ function AnimeContainer({animeList}) {
         return (
             <AnimeCard 
                 title={anime.title_english}
+                backupTitle={anime.title}
                 airing={anime.airing}
                 episodes={anime.episodes}
                 genres={genre.name}
