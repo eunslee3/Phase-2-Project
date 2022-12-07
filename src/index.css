@@ -130,12 +130,15 @@ button {
 .recommended-container::-webkit-scrollbar {
   display: none;
 }
+.nav {
+    display: flex;
+}
 
-/* {
-  box-Sizing: border-box;
-} */
-body {
-  margin: 0;
+h1 {
+  color: red
+}
+label{
+  color:white
 }
 .nav {
   background-color: red ;
@@ -149,13 +152,6 @@ body {
 .site-title {
   font-size: 2rem;
 }
-.nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
 .nav a {
   color: inherit;
   text-decoration: none;
@@ -163,21 +159,4 @@ body {
   display: flex;
   align-items: center;
   padding: .25rem;
-}
-.nav li.active {
-background-color: black;
-}
-.nav li.hover {
-  background-color: red;
-  }
-h1 {
-  color: red
-}
-label{
-  color:white
-
-
-.nav {
-    display: flex;
-
 }
