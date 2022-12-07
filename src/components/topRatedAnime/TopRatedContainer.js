@@ -1,5 +1,5 @@
 import React from 'react'
-import TopRatedCard from './TopRatedCard'
+import TopRatedCard from '../topRatedAnime/TopRatedCard'
 
 function TopRatedContainer({animeList}) {
     const renderAnimeCard = animeList?.map((anime) => {
