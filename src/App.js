@@ -23,8 +23,8 @@ function App() {
   const filteredAnimeCard = animeList.filter((anime) => 
     anime.title.toLowerCase().includes(search.toLowerCase()))
     
-// console.log(search)
-// console.table(filteredAnimeCard)
+console.log(search)
+console.table(filteredAnimeCard)
   
 
 function renderRecommendedAnime() {
