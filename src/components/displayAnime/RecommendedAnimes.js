@@ -1,12 +1,6 @@
 import React from 'react'
 import RecommendedAnimeCard from './RecommendedAnimeCard'
 function RecommendedAnimes({animeList, recommendedAnimes}) {
-    // useEffect(() => {
-    //     fetch(recommendedAnimesApi)
-    //     .then(r => r.json())
-    //     .then(data => setRecommendedAnimes(data.data))
-    //   }, [])
-    console.log(recommendedAnimes)
     const renderAnimeCard = recommendedAnimes?.map((anime) => {
         return (
             <RecommendedAnimeCard
