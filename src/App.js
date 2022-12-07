@@ -8,8 +8,9 @@ import Search from './components/Search'
 import AnimeForm from './components/displayAnime/AnimeForm'
 //import NavBar from './components/navigationBar/NavBar'
 import About from './components/pages/About'
-import Top from './components/pages/Top'
+import RecommendedAnimes222 from './components/pages/RecommendedAnimes222'
 import Home from './components/pages/Home'
+import RecommendedAnimes from './components/displayAnime/RecommendedAnimes';
 
 
 
@@ -49,8 +50,8 @@ function renderRecommendedAnime() {
       case "/":
         Component = Home
       break
-      case "/top":
-        Component = Top
+      case "/RecommendedAnimes222":
+        Component = RecommendedAnimes222
       case "/about":
         Component = About
         break
