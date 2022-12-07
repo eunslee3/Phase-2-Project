@@ -1,15 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 import AnimeContainer from "./AnimeContainer"
 import TopRatedContainer from './TopRatedContainer'
 import RecommendedAnimes from './RecommendedAnimes'
+import PopUpDescription from '../animeDescription/PopUpModal'
 
 function MainContainer({animeList, recommendedAnimesApi, setRecommendedAnimes, recommendedAnimes}) {
+    const [imgClicked, setImgClicked] = useState(false)
+
+    function handleModal(img, title, description, genres, ) {
+       return ( <PopUpDescription 
+            img={img}
+            title={title}
+            description={title}
+            genres={genres}
+        />
+       )
+    }
+
     return (
         <div className="main-container">
-            <RecommendedAnimes 
+            {/* <PopUpDescription /> */}
+            {/* <RecommendedAnimes 
                 recommendedAnimes={recommendedAnimes} 
                 animeList={animeList}
-            />
+                setImgClicked={setImgClicked}
+                imgClicked={imgClicked}
+            /> */}
             <TopRatedContainer animeList={animeList}/>
             <AnimeContainer animeList={animeList}/>
 

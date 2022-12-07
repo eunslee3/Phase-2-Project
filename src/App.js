@@ -6,17 +6,16 @@ import MainContainer from './components/displayAnime/MainContainer'
 import Header from './components/Header'
 import Search from './components/Search'
 import AnimeForm from './components/displayAnime/AnimeForm'
-import NavBar from './components/navigationBar/NavBar'
 
 
 
 const animesApi = "https://api.jikan.moe/v4/anime"
 const recommendedAnimesApi = "https://api.jikan.moe/v4/recommendations/anime"
 
-function App() {
+async function App() {
   const [animeList, setAnimeList] = useState([])
   const [recommendedAnimes, setRecommendedAnimes] = useState([])
-  const [getStarted, setGetStarted] = useState(false)
+  const [popUp, setPopUp] = useState(false)
 
   const [search, setSearch] = useState("")
 
@@ -27,21 +26,23 @@ function App() {
 // console.table(filteredAnimeCard)
   
 
-function renderRecommendedAnime() {
-  fetch(recommendedAnimesApi)
-  .then(r => r.json())
-  .then(data => setRecommendedAnimes(data.data))
-}
+// function renderRecommendedAnime() {
+//   fetch(recommendedAnimesApi)
+//   .then(r => r.json())
+//   .then(data => setRecommendedAnimes(data.data))
+// }
 
  useEffect(() => {
     fetch(animesApi)
     .then(r => r.json())
     .then(data => {
       setAnimeList(data.data)
-      renderRecommendedAnime()
+      // renderRecommendedAnime()
     })
   }, [])
-  let component
+
+  console.log(animeList)
+
   switch(window.location.pathname) {
     case "/":
       break
@@ -52,7 +53,7 @@ function renderRecommendedAnime() {
     <div>
       <Header />
       <Search setSearch={setSearch}/>
-      <HeroImage getStarted={getStarted} setGetStarted={setGetStarted}/>
+      <HeroImage popUp={popUp} setPopUp={setPopUp}/>
       <AnimeForm />
       <MainContainer animeList={filteredAnimeCard}
       setRecommendedAnimes={setRecommendedAnimes} 
