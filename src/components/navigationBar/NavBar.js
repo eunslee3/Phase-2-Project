@@ -1,20 +1,16 @@
 import React from 'react';
+import { Link, NavLink} from 'react-router-dom'
 
-function NavBar() {
-    const path = window.location.pathname
+
+
+function NavBar({renderRecommendedAnime}) {
     return (
         <nav className="nav">
-            <a href="/" className="site-title">Anime Bar</a>
-            <ul>
-                <li className="active">
-                    <a href="Top">RecommendedAnimes</a>
-                </li>
-                <li>
-                    <a href="/about">About</a>
-                </li>
-            </ul>
+            <Link onClick={() => renderRecommendedAnime()} href="/recommended">Recommended Animes</Link>
+            <Link href="/mangas">Mangas</Link>
+
         </nav>
     )
 }
-
+console.log(NavBar)
 export default NavBar
