@@ -1,6 +1,6 @@
 import React from 'react'
 import RecommendedAnimeCard from './RecommendedAnimeCard'
-function RecommendedAnimes({animeList, recommendedAnimes, imgClicked, setImgClicked}) {
+function RecommendedAnimes({animeList, recommendedAnimes}) {
     const renderAnimeCard = recommendedAnimes?.map((anime) => {
         return (
             <RecommendedAnimeCard
@@ -14,9 +14,6 @@ function RecommendedAnimes({animeList, recommendedAnimes, imgClicked, setImgClic
                 status={anime.status}
                 score={anime.score}
                 id={anime.mal_id}
-                imgClicked={imgClicked}
-                setImgClicked={setImgClicked}
-                review={anime.content}
             />
         )
     })

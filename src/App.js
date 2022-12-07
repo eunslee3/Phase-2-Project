@@ -26,18 +26,18 @@ console.log(search)
 console.table(filteredAnimeCard)
   
 
-// function renderRecommendedAnime() {
-//   fetch(recommendedAnimesApi)
-//   .then(r => r.json())
-//   .then(data => setRecommendedAnimes(data.data))
-// }
+function renderRecommendedAnime() {
+  fetch(recommendedAnimesApi)
+  .then(r => r.json())
+  .then(data => setRecommendedAnimes(data.data))
+}
 
  useEffect(() => {
     fetch(animesApi)
     .then(r => r.json())
     .then(data => {
       setAnimeList(data.data)
-      // renderRecommendedAnime()
+      renderRecommendedAnime()
     })
   }, [])
 

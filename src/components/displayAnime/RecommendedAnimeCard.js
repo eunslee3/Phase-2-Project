@@ -14,15 +14,6 @@ function RecommendedAnimeCard({backupTitle, title, airing, episodes, genres, typ
         <div onClick={() => setImgClicked(!imgClicked)} className="anime-card">
             <img id={id} className="anime-card-image" src={image.large_image_url} />
             <h3 id="anime-card-title">{pickTitle()}</h3>
-            {/* {imgClicked ? 
-            <PopUpModal
-                image={image}
-                title={title}
-                review={review}
-                genres={genres}
-            /> 
-            : 
-            null} */}
         </div>
     )
 }
