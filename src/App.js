@@ -29,6 +29,7 @@ async function App() {
     anime.title.toLowerCase().includes(search.toLowerCase()))
   
   console.log(popUp)
+  console.log(animeList)
 
 function renderRecommendedAnime() {
   fetch(recommendedAnimesApi)
