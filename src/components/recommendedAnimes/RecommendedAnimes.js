@@ -1,19 +1,13 @@
 import React from 'react'
-import RecommendedAnimeCard from './RecommendedAnimeCard'
-function RecommendedAnimes({animeList, recommendedAnimes}) {
+import RecommendedAnimeCard from '../recommendedAnimes/RecommendedAnimeCard'
+function RecommendedAnimes({recommendedAnimes}) {
     const renderAnimeCard = recommendedAnimes?.map((anime) => {
         return (
             <RecommendedAnimeCard
-                title={anime.title_english}
-                backupTitle={anime.title}
-                airing={anime.airing}
-                episodes={anime.episodes}
-                genres={""}
-                type={""}
+                title={anime.entry[0].title}
+                date={anime.date}
                 image={anime.entry[0].images?.webp}
-                status={anime.status}
-                score={anime.score}
-                id={anime.mal_id}
+                content={anime.content}
             />
         )
     })

@@ -1,16 +1,14 @@
 import React from "react";
 import NavBar from './navigationBar/NavBar'
+import { Link} from 'react-router-dom'
 
-function Header() {
+function Header({renderRecommendedAnime}) {
   return (
-    <header>
-      <h1 className="nav-bar-title">
+    <header className="header">
+      <Link to="/" className="nav-bar-title">
       AnimeFlix
-        <span className="logo" role="img">
-        {/* ༼ つ ◕_◕ ༽つ🍰🍔🍕 "૮₍  ˶•⤙•˶ ₎ა */}
-        </span>
-      </h1>
-      <NavBar />
+      </Link>
+      <NavBar renderRecommendedAnime={renderRecommendedAnime}/>
     </header>
   );
 }

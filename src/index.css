@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   flex-direction: column;
 }
-button {
+.button {
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -161,7 +161,7 @@ button {
     font-size: 5em;
     color: red;
     margin-left: 40px;
-    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+    text-decoration-line: none;
 }
 /*
 title 
@@ -173,11 +173,15 @@ label{
   color:white
 }
 
+.header {
+  display: flex;
+  background-color: #121D1D;
+}
+
 .nav {
-  background-color: red ;
   color: white;
   display: flex;
- 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;

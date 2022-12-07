@@ -1,21 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 import AnimeContainer from "./AnimeContainer"
-import TopRatedContainer from './TopRatedContainer'
-import RecommendedAnimes from './RecommendedAnimes'
-import PopUpDescription from '../animeDescription/PopUpModal'
+import TopRatedContainer from '../topRatedAnime/TopRatedContainer'
 
 function MainContainer({animeList, recommendedAnimesApi, setRecommendedAnimes, recommendedAnimes}) {
 
     return (
         <div className="main-container">
-            <RecommendedAnimes 
+            {/* <RecommendedAnimes 
                 recommendedAnimes={recommendedAnimes} 
                 animeList={animeList}
-                setImgClicked={setImgClicked}
-                imgClicked={imgClicked}
-            />
-            <TopRatedContainer animeList={animeList}/>
+            /> */}
             <AnimeContainer animeList={animeList}/>
+            <TopRatedContainer animeList={animeList}/>
 
         </div>
     )
