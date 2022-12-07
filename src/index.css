@@ -130,7 +130,6 @@ button {
 .recommended-container::-webkit-scrollbar {
   display: none;
 }
-
 .nav {
     display: flex;
 }
@@ -163,4 +162,47 @@ button {
     color: red;
     margin-left: 40px;
     text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+/*
+title 
+*/
+h1 {
+  color: red;
+}
+label{
+  color:white
+}
+
+.nav {
+  background-color: red ;
+  color: white;
+  display: flex;
+ 
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.site-title {
+  font-size: 2rem;
+}
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+}
+.nav li.active {
+  background-color: black;
+}
+.nav li.hover {
+  background-color: red;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }

@@ -7,6 +7,12 @@ import Header from './components/Header'
 import Search from './components/Search'
 import AnimeForm from './components/displayAnime/AnimeForm'
 
+//import NavBar from './components/navigationBar/NavBar'
+import About from './components/pages/About'
+import Top from './components/pages/Top'
+import Home from './components/pages/Home'
+
+
 
 
 const animesApi = "https://api.jikan.moe/v4/anime"
@@ -41,14 +47,18 @@ function renderRecommendedAnime() {
     })
   }, [])
 
-  console.log(animeList)
-
-  switch(window.location.pathname) {
-    case "/":
+  let Component
+  switch (window.location.pathname) {
+      case "/":
+        Component = Home
       break
-      case "about":
+      case "/top":
+        Component = Top
+      case "/about":
+        Component = About
         break
   }
+
   return (
     <div>
       <Header />
@@ -58,6 +68,7 @@ function renderRecommendedAnime() {
       <MainContainer animeList={filteredAnimeCard}
       setRecommendedAnimes={setRecommendedAnimes} 
       recommendedAnimes={recommendedAnimes} /> 
+      <Component />
     </div>
   );
 }
