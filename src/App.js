@@ -8,10 +8,10 @@ import Search from './components/Search'
 import AnimeForm from './components/displayAnime/AnimeForm'
 
 //import NavBar from './components/navigationBar/NavBar'
-import About from './components/pages/About'
-import RecommendedAnimes222 from './components/pages/RecommendedAnimes222'
-import Home from './components/pages/Home'
-import RecommendedAnimes from './components/displayAnime/RecommendedAnimes';
+// import About from './components/pages/About'
+// import RecommendedAnimes222 from './components/pages/RecommendedAnimes222'
+// import Home from './components/pages/Home'
+//import RecommendedAnimes from './components/displayAnime/RecommendedAnimes';
 
 
 
@@ -29,7 +29,7 @@ async function App() {
   const filteredAnimeCard = animeList.filter((anime) => 
     anime.title.toLowerCase().includes(search.toLowerCase()))
   
-  console.log(popUp)
+  
 
 function renderRecommendedAnime() {
   fetch(recommendedAnimesApi)
@@ -46,17 +46,18 @@ function renderRecommendedAnime() {
     })
   }, [])
 
-  let Component
-  switch (window.location.pathname) {
-      case "/":
-        Component = Home
-      break
-      case "/RecommendedAnimes222":
-        Component = RecommendedAnimes222
-      case "/about":
-        Component = About
-        break
-  }
+  // let Component
+  // switch (window.location.pathname) {
+  //     case "/":
+  //       Component = Home
+  //       break
+  //     case "/RecommendedAnimes222":
+  //       Component = RecommendedAnimes222
+  //       break
+  //     case "/about":
+  //       Component = About
+  //       break
+  // }
 
   return (
     <div>
@@ -67,7 +68,7 @@ function renderRecommendedAnime() {
       <MainContainer animeList={filteredAnimeCard}
       setRecommendedAnimes={setRecommendedAnimes} 
       recommendedAnimes={recommendedAnimes} /> 
-      <Component />
+      {/* <Component /> */}
     </div>
   );
 }

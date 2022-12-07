@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import PopUpModal from '../animeDescription/PopUpModal'
+//import PopUpModal from '../animeDescription/PopUpModal'
 
 function RecommendedAnimeCard({backupTitle, title, airing, episodes, genres, type, image, status, score, id, imgClicked, setImgClicked, review}) {
     const pickTitle = () => {

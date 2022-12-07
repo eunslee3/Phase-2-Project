@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import AnimeContainer from "./AnimeContainer"
 import TopRatedContainer from './TopRatedContainer'
 import RecommendedAnimes from './RecommendedAnimes'
-import PopUpDescription from '../animeDescription/PopUpModal'
+//import PopUpDescription from '../animeDescription/PopUpModal'
 
 function MainContainer({animeList, recommendedAnimesApi, setRecommendedAnimes, recommendedAnimes}) {
 
@@ -11,8 +11,8 @@ function MainContainer({animeList, recommendedAnimesApi, setRecommendedAnimes, r
             <RecommendedAnimes 
                 recommendedAnimes={recommendedAnimes} 
                 animeList={animeList}
-                setImgClicked={setImgClicked}
-                imgClicked={imgClicked}
+                // setImgClicked={setImgClicked}
+                // imgClicked={imgClicked}
             />
             <TopRatedContainer animeList={animeList}/>
             <AnimeContainer animeList={animeList}/>
