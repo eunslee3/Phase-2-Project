@@ -7,11 +7,13 @@ import Header from './components/Header'
 import Search from './components/Search'
 import AnimeForm from './components/displayAnime/AnimeForm'
 
-//import NavBar from './components/navigationBar/NavBar'
+
 import About from './components/pages/About'
 import RecommendedAnimes222 from './components/pages/RecommendedAnimes222'
 import Home from './components/pages/Home'
 import RecommendedAnimes from './components/displayAnime/RecommendedAnimes';
+import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from "react-dom";
 
 
 
@@ -19,7 +21,7 @@ import RecommendedAnimes from './components/displayAnime/RecommendedAnimes';
 const animesApi = "https://api.jikan.moe/v4/anime"
 const recommendedAnimesApi = "https://api.jikan.moe/v4/recommendations/anime"
 
-async function App() {
+function App() {
   const [animeList, setAnimeList] = useState([])
   const [recommendedAnimes, setRecommendedAnimes] = useState([])
   const [popUp, setPopUp] = useState(false)
@@ -29,7 +31,7 @@ async function App() {
   const filteredAnimeCard = animeList.filter((anime) => 
     anime.title.toLowerCase().includes(search.toLowerCase()))
   
-  console.log(popUp)
+  
 
 function renderRecommendedAnime() {
   fetch(recommendedAnimesApi)
@@ -46,18 +48,26 @@ function renderRecommendedAnime() {
     })
   }, [])
 
-  let Component
-  switch (window.location.pathname) {
-      case "/":
-        Component = Home
-      break
-      case "/RecommendedAnimes222":
-        Component = RecommendedAnimes222
-      break
-      case "/about":
-        Component = About
-        break
-  }
+  // let component
+  // switch (window.location.pathname) {
+  //     case "/":
+  //       component = Home
+  //     break
+  //     case "/RecommendedAnimes222":
+  //       component = RecommendedAnimes222
+  //     break
+  //     case "/about":
+  //       component = About
+  //     break
+  // }
+  ReactDOM.render(
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+    document.getElementById("root")
+  );
 
   return (
     <div>
@@ -68,7 +78,7 @@ function renderRecommendedAnime() {
       <MainContainer animeList={filteredAnimeCard}
       setRecommendedAnimes={setRecommendedAnimes} 
       recommendedAnimes={recommendedAnimes} /> 
-      <Component />
+     
     </div>
   );
 }
