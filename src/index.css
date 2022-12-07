@@ -134,12 +134,16 @@ button {
     display: flex;
 }
 
+/*
+title 
+*/
 h1 {
   color: red
 }
 label{
   color:white
 }
+
 .nav {
   background-color: red ;
   color: white;
@@ -159,4 +163,17 @@ label{
   display: flex;
   align-items: center;
   padding: .25rem;
+}
+.nav li.active {
+  background-color: black;
+}
+.nav li.hover {
+  background-color: red;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
