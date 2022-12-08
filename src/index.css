@@ -47,6 +47,7 @@ body::-webkit-scrollbar {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 5px;
 }
 /* ------------------- main page styling ------------------- */
 .anime-card {
@@ -245,11 +246,25 @@ label{
   transition: all 0.15s;
 }
 
+.subscription-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .subscription {
-  
-  max-width: 400px;
-  margin: 0 auto;
+  width: 600px;
+  height: 400px;
   text-align: center;
+  border: 2px solid #586c6c;
+  border-radius: 10px;
+  padding: 40px;
+  padding-right: 60px;
+  background-color: #e9eded;
+  box-shadow: 5px 6px 10px #090b0b;
 }
 .subscription label {
   text-align: left;
@@ -285,11 +300,13 @@ label{
 }
 
 .description {
-
   display: flex;
-  border: 2px solid white;
+  border: 2px solid #586c6c;
+  border-radius: 10px;
   flex-direction: row;
   padding: 20px;
+  background-color: #e9eded;
+  box-shadow: 5px 6px 10px #090b0b;
 }
 
 /* child */

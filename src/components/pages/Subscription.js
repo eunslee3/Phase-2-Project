@@ -9,10 +9,13 @@ function Subscription(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const sub = {name, email};
+        const sub = {
+          name: name, 
+          email: email
+        };
         console.log(sub);
 
-        fetch('http://localhost:3001/subscription',{
+        fetch('http://localhost:4000/subscription',{
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(sub)
@@ -24,40 +27,39 @@ function Subscription(){
     }
 
     return (
-        
-    <div className="subscription">
-      <Header/>
-      <h2>Subscription</h2>
-    <form onSubmit={handleSubmit}>
-    <label>Name:</label>
-        <input 
-        type="text"
-        required
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        />
-    <label>Email:</label>
-    <textarea
-      required
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-    ></textarea>
+      <div>
+        <Header/>
+        <div className="subscription-container">
+          <div className="subscription">
+            <h2>Subscription</h2>
+          <form onSubmit={handleSubmit}>
+          <label>Name:</label>
+              <input 
+              type="text"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              />
+          <label>Email:</label>
+          <textarea
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          ></textarea>
 
-    {/* <label>DOB:</label>
-        <input 
-        type="text"
-        required
-        value={dob}
-        onChange={(e) => setDob(e.target.value)}
-        /> */}
-        <button>Subscribe</button>
-        <p>{name}</p>
-        <p>{email}</p>
-        {/* <p>{dob}</p> */}
-      </form>
-       
-       
-    </div>
+          {/* <label>DOB:</label>
+              <input 
+              type="text"
+              required
+              value={dob}
+              onChange={(e) => setDob(e.target.value)}
+              /> */}
+              <button>Subscribe</button>
+              {/* <p>{dob}</p> */}
+            </form>
+          </div>
+        </div>
+      </div>
     )
 }
 
