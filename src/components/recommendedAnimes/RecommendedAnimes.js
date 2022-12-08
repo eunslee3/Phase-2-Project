@@ -2,7 +2,6 @@ import React from 'react'
 import RecommendedAnimeCard from '../recommendedAnimes/RecommendedAnimeCard'
 function RecommendedAnimes({recommendedAnimes}) {
     const renderAnimeCard = recommendedAnimes?.map((anime) => {
-        console.log(anime)
         return (
             <RecommendedAnimeCard
                 title={anime.entry[0].title}
