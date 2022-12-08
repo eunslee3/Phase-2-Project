@@ -4,7 +4,8 @@ import { Link, NavLink} from 'react-router-dom'
 function NavBar({renderRecommendedAnime}) {
     return (
         <nav className="nav">
-            <Link onClick={() => renderRecommendedAnime()} href="/recommended">Recommended Animes</Link>
+            <Link to="/animes">Animes</Link>
+            <Link onClick={() => renderRecommendedAnime()} to="/recommended">Recommended Animes</Link>
             <Link href="/mangas">Mangas</Link>
         </nav>
     )
