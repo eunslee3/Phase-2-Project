@@ -2,6 +2,7 @@ import React from 'react'
 import RecommendedAnimeCard from '../recommendedAnimes/RecommendedAnimeCard'
 function RecommendedAnimes({recommendedAnimes}) {
     const renderAnimeCard = recommendedAnimes?.map((anime) => {
+        console.log(anime)
         return (
             <RecommendedAnimeCard
                 title={anime.entry[0].title}
@@ -14,7 +15,7 @@ function RecommendedAnimes({recommendedAnimes}) {
     return (
         <div>
             <h2 id="anime-card-category">Recommended Animes</h2>
-            <div className="recommended-container">
+            <div className="anime-container">
                 {renderAnimeCard}
             </div>
         </div>
