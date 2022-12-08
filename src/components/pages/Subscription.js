@@ -5,12 +5,14 @@ import Header from '../Header'
 function Subscription(){
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    // const [dob, setDob] = useState('');
+    const [isPending, setIsPending] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const sub = {name, email};
         console.log(sub);
+
+        setIsPending(true);
 
         fetch('http://localhost:3001/subscription',{
             method: 'POST',
@@ -18,7 +20,8 @@ function Subscription(){
             body: JSON.stringify(sub)
         })
         .then((res)=> res.json())
-        .then(() => { console.log('new subscription added');
+        .then(() => { console.log('new subscription added')
+        setIsPending(false);
     })
 
     }
@@ -51,9 +54,7 @@ function Subscription(){
         onChange={(e) => setDob(e.target.value)}
         /> */}
         <button>Subscribe</button>
-        <p>{name}</p>
-        <p>{email}</p>
-        {/* <p>{dob}</p> */}
+       
       </form>
        
        
