@@ -45,7 +45,7 @@ function App() {
             <AnimePage  renderRecommendedAnime={renderRecommendedAnime} animeList={animeList}/>
           </Route>
           <Route path="/recommended">
-            <RecommendedPage recommendedAnimes={recommendedAnimes}/>
+            <RecommendedPage renderRecommendedAnime={renderRecommendedAnime} recommendedAnimes={recommendedAnimes}/>
           </Route>
         </Switch>
       </div>
