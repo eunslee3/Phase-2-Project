@@ -33,7 +33,7 @@ function TopRatedContainer({animeList}) {
             {/* <div id="see-more">
                 <h3>See More</h3>
             </div> */}
-            <div className="top-rated-container">
+            <div className="anime-container">
                 {renderAnimeCard}
             </div>
         </div>

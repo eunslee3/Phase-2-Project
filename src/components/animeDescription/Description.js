@@ -2,12 +2,35 @@ import React from 'react'
 
 function Description({image, title, score, status, episodes, genres, year, synopsis, rating, id}) {
 
+    function handleSaved() {
+        fetch("http://localhost:4000/saved", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                image: image,
+                title: title,
+                score: score,
+                status: status,
+                episodes: episodes,
+                genres: genres,
+                year: year,
+                synopsis: synopsis,
+                rating: rating,
+        })
+        })
+        .then(r => r.json())
+        .then(data => console.log(data))
+    }
+
     return (
         <div className="description">
             <div className="description-info">
                 <img src={image}></img>
                 <h1>{title}</h1>
-                <h2 id="score">Score: {score}</h2>
+                <h2 id="score">AnimeFlix-Score: {score}</h2>
                 <h3 id="rating">Rated: {rating}</h3>
             </div>
             <div className="description-info-2">
@@ -22,7 +45,7 @@ function Description({image, title, score, status, episodes, genres, year, synop
                     <p>{synopsis}</p>
                 </div>
                 <div className="desc-btn">
-                    <button className="button">Save</button>
+                    <button onClick={handleSaved} className="button">Save</button>
                 </div>
             </div>
         </div>
