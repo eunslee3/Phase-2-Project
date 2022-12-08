@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Search({setSearch}){
+function SearchRecommended({setSearch}){
     function handleChange(e){
         setSearch(e.target.value);
     };
@@ -9,7 +9,7 @@ function Search({setSearch}){
         <div className="searchbar">
         
         <label 
-            htmlFor="search">Search Anime:
+            htmlFor="search">Search R Anime:
         
         </label>
         <input
@@ -23,4 +23,4 @@ function Search({setSearch}){
     )
 }
 
-export default Search;
+export default SearchRecommended;
