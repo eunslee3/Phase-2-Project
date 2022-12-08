@@ -7,7 +7,11 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './components/pages/Home'
 import AnimePage from './components/pages/AnimePage'
 import RecommendedPage from './components/pages/RecommendedPage'
+
 import Subscription from './components/pages/Subscription';
+
+import AnimeDescription from './components/pages/AnimeDescription'
+
 
 const animesApi = "https://api.jikan.moe/v4/anime"
 const recommendedAnimesApi = "https://api.jikan.moe/v4/recommendations/anime"
@@ -27,6 +31,7 @@ function App() {
     .then(r => r.json())
     .then(data => setRecommendedAnimes(data.data))
   }
+
 
   //console.log(recommendedAnimes)
 
@@ -50,8 +55,14 @@ function App() {
           <Route path="/recommended">
             <RecommendedPage renderRecommendedAnime={renderRecommendedAnime} recommendedAnimes={recommendedAnimes}/>
           </Route>
+
           <Route path="/subscription">
             <Subscription renderRecommendedAnime={renderRecommendedAnime} subscription={subscription}/>
+          </Route>
+
+          <Route path="/description/:id">
+            <AnimeDescription />
+
           </Route>
         </Switch>
       </div>

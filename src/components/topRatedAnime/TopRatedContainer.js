@@ -9,6 +9,7 @@ function TopRatedContainer({animeList}) {
         if(anime.score >= 8.0) {
             return (
                 <TopRatedCard 
+                    key={anime.mal_id}
                     title={anime.title_english}
                     backupTitle={anime.title}
                     airing={anime.airing}

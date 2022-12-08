@@ -11,11 +11,13 @@ function NavBar({renderRecommendedAnime}) {
             <Link to="/animes">Animes</Link>
             <Link onClick={() => renderRecommendedAnime()} to="/recommended">Recommended Animes</Link>
             <Link to="/mangas">Mangas</Link>
+
             <Link to="/subscription">Subscription</Link>
 
             
 
            
+
 
         </nav>
     )

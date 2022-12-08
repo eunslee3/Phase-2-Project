@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+const animesApi = "https://api.jikan.moe/v4/anime"
 
 function AnimeCard({backupTitle, title, airing, episodes, genres, type, image, status, score, id}) {
     const pickTitle = () => {
@@ -9,9 +12,12 @@ function AnimeCard({backupTitle, title, airing, episodes, genres, type, image, s
             return title
         }
     }
+
     return (
         <div className="anime-card">
-            <img alt="" key={id} className="anime-card-image" src={image.large_image_url} />
+            <Link to={`/description/${id}`}>
+                <img alt="" key={id} className="anime-card-image" src={image.large_image_url} />
+            </Link>
             <h3 id="anime-card-title">{pickTitle()}</h3>
         </div>
     )
