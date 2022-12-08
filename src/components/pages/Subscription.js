@@ -5,60 +5,61 @@ import Header from '../Header'
 function Subscription(){
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [isPending, setIsPending] = useState(false);
+    // const [dob, setDob] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const sub = {name, email};
+        const sub = {
+          name: name, 
+          email: email
+        };
         console.log(sub);
 
-        setIsPending(true);
-
-        fetch('http://localhost:3001/subscription',{
+        fetch('http://localhost:4000/subscription',{
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(sub)
         })
         .then((res)=> res.json())
-        .then(() => { console.log('new subscription added')
-        setIsPending(false);
+        .then(() => { console.log('new subscription added');
     })
 
     }
 
     return (
-        
-    <div className="subscription">
-      <Header/>
-      <h2>Subscription</h2>
-    <form onSubmit={handleSubmit}>
-    <label>Name:</label>
-        <input 
-        type="text"
-        required
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        />
-    <label>Email:</label>
-    <textarea
-      required
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-    ></textarea>
+      <div>
+        <Header/>
+        <div className="subscription-container">
+          <div className="subscription">
+            <h2>Subscription</h2>
+          <form onSubmit={handleSubmit}>
+          <label>Name:</label>
+              <input 
+              type="text"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              />
+          <label>Email:</label>
+          <textarea
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          ></textarea>
 
-    {/* <label>DOB:</label>
-        <input 
-        type="text"
-        required
-        value={dob}
-        onChange={(e) => setDob(e.target.value)}
-        /> */}
-        <button>Subscribe</button>
-       
-      </form>
-       
-       
-    </div>
+          {/* <label>DOB:</label>
+              <input 
+              type="text"
+              required
+              value={dob}
+              onChange={(e) => setDob(e.target.value)}
+              /> */}
+              <button>Subscribe</button>
+              {/* <p>{dob}</p> */}
+            </form>
+          </div>
+        </div>
+      </div>
     )
 }
 

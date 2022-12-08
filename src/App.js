@@ -21,19 +21,12 @@ function App() {
   const [animeList, setAnimeList] = useState([])
   const [recommendedAnimes, setRecommendedAnimes] = useState([])
   const [subscription, setSubscription] = useState([])
-  //const [search, setSearch] = useState("")
-
-  //const filteredAnimeCard = animeList.filter((anime) => 
-    //anime.title.toLowerCase().includes(search.toLowerCase()))
   
   function renderRecommendedAnime() {
     fetch(recommendedAnimesApi)
     .then(r => r.json())
     .then(data => setRecommendedAnimes(data.data))
   }
-
-
-  //console.log(recommendedAnimes)
 
   useEffect(() => {
       fetch(animesApi)
