@@ -1,12 +1,15 @@
 import React from 'react'
 import HeroImage from "./HeroImage"
-import HomepageDesc from '../homepage/HomepageDesc'
+//import HomepageDesc from '../homepage/HomepageDesc'
+
 
 function Home({animeList}) {
+
     return (
         <div>
             <HeroImage />
-            <HomepageDesc />
+            {/* <HomepageDesc /> */}
+            
         </div>
     )
 }

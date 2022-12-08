@@ -114,6 +114,7 @@ body::-webkit-scrollbar {
   overflow-x: scroll;
   margin-bottom: 50px;
   padding-bottom: 100px;
+  
 }
 .top-rated-container::-webkit-scrollbar {
   display: none;
@@ -209,4 +210,62 @@ label{
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+/* Search Bar Css */
+/* body {
+  
+  font-size: 1.3rem;
+ 
+} */
+.searchbar {
+  display: flex;
+  
+  justify-content:left;
+}
+
+#search_text {
+  width: 297px;
+  padding: 15px 0 15px 20px;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  border: 0 none;
+  height: 52px;
+  margin-right: 0;
+  color: white;
+  outline: none;
+  background: #1f7f5c;
+  float: left;
+  box-sizing: border-box;
+  transition: all 0.15s;
+}
+
+.subscription {
+  
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.subscription label {
+  text-align: left;
+  display: block;
+}
+.subscription h2 {
+  font-size: 40px;
+  color: red;
+  margin-bottom: 30px;
+}
+.subscription input, .subscription textarea, .subscription select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  display: block;
+}
+.subscription button {
+  background-color: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }

@@ -13,7 +13,7 @@ function MainContainer({animeList, recommendedAnimesApi, setRecommendedAnimes, r
            
             <AnimeContainer animeList={animeList}/>
             <TopRatedContainer animeList={animeList}/>
-
+            
         </div>
     )
 }
