@@ -8,163 +8,48 @@
   ],
   "saved": [
     {
-      "image": "https://cdn.myanimelist.net/images/anime/13/17405l.webp",
-      "title": "Naruto",
-      "score": 7.98,
-      "status": "Finished Airing",
-      "episodes": 220,
-      "genres": [
-        {
-          "mal_id": 1,
-          "type": "anime",
-          "name": "Action",
-          "url": "https://myanimelist.net/anime/genre/1/Action"
-        },
-        {
-          "mal_id": 2,
-          "type": "anime",
-          "name": "Adventure",
-          "url": "https://myanimelist.net/anime/genre/2/Adventure"
-        },
-        {
-          "mal_id": 10,
-          "type": "anime",
-          "name": "Fantasy",
-          "url": "https://myanimelist.net/anime/genre/10/Fantasy"
-        }
-      ],
-      "year": 2002,
-      "synopsis": "Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto.\n\nNow, Naruto is a hyperactive and knuckle-headed ninja still living in Konohagakure. Shunned because of the Kyuubi inside him, Naruto struggles to find his place in the village, while his burning desire to become the Hokage of Konohagakure leads him not only to some great new friends, but also some deadly foes.\n\n[Written by MAL Rewrite]",
-      "rating": "PG-13 - Teens 13 or older",
-      "apiID": 20,
-      "id": 3
-    },
-    {
-      "image": "https://cdn.myanimelist.net/images/anime/7/21569l.webp",
-      "title": "Bouken Ou Beet",
-      "score": 6.95,
-      "status": "Finished Airing",
-      "episodes": 52,
-      "genres": [
-        {
-          "mal_id": 2,
-          "type": "anime",
-          "name": "Adventure",
-          "url": "https://myanimelist.net/anime/genre/2/Adventure"
-        },
-        {
-          "mal_id": 10,
-          "type": "anime",
-          "name": "Fantasy",
-          "url": "https://myanimelist.net/anime/genre/10/Fantasy"
-        },
-        {
-          "mal_id": 37,
-          "type": "anime",
-          "name": "Supernatural",
-          "url": "https://myanimelist.net/anime/genre/37/Supernatural"
-        }
-      ],
-      "year": 2004,
-      "synopsis": "It is the dark century and the people are suffering under the rule of the devil, Vandel, who is able to manipulate monsters. The Vandel Busters are a group of people who hunt these devils, and among them, the Zenon Squad is known to be the strongest busters on the continent. A young boy, Beet, dreams of joining the Zenon Squad. However, one day, as a result of Beet's fault, the Zenon squad was defeated by the devil, Beltose. The five dying busters sacrificed their life power into their five weapons, Saiga. After giving their weapons to Beet, they passed away. Years have passed since then and the young Vandel Buster, Beet, begins his adventure to carry out the Zenon Squad's will to put an end to the dark century.",
-      "rating": "PG - Children",
-      "apiID": 8,
-      "id": 4
-    },
-    {
-      "image": "https://cdn.myanimelist.net/images/anime/7/20310l.webp",
-      "title": "Trigun",
-      "score": 8.21,
-      "status": "Finished Airing",
-      "episodes": 26,
-      "genres": [
-        {
-          "mal_id": 1,
-          "type": "anime",
-          "name": "Action",
-          "url": "https://myanimelist.net/anime/genre/1/Action"
-        },
-        {
-          "mal_id": 2,
-          "type": "anime",
-          "name": "Adventure",
-          "url": "https://myanimelist.net/anime/genre/2/Adventure"
-        },
-        {
-          "mal_id": 4,
-          "type": "anime",
-          "name": "Comedy",
-          "url": "https://myanimelist.net/anime/genre/4/Comedy"
-        },
-        {
-          "mal_id": 8,
-          "type": "anime",
-          "name": "Drama",
-          "url": "https://myanimelist.net/anime/genre/8/Drama"
-        },
-        {
-          "mal_id": 24,
-          "type": "anime",
-          "name": "Sci-Fi",
-          "url": "https://myanimelist.net/anime/genre/24/Sci-Fi"
-        }
-      ],
-      "year": 1998,
-      "synopsis": "Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. The reason: he's a merciless villain who lays waste to all those that oppose him and flattens entire cities for fun, garnering him the title \"The Humanoid Typhoon.\" He leaves a trail of death and destruction wherever he goes, and anyone can count themselves dead if they so much as make eye contact—or so the rumors say. In actuality, Vash is a huge softie who claims to have never taken a life and avoids violence at all costs.\n\nWith his crazy doughnut obsession and buffoonish attitude in tow, Vash traverses the wasteland of the planet Gunsmoke, all the while followed by two insurance agents, Meryl Stryfe and Milly Thompson, who attempt to minimize his impact on the public. But soon, their misadventures evolve into life-or-death situations as a group of legendary assassins are summoned to bring about suffering to the trio. Vash's agonizing past will be unraveled and his morality and principles pushed to the breaking point.\n\n[Written by MAL Rewrite]",
-      "rating": "PG-13 - Teens 13 or older",
-      "apiID": 6,
-      "id": 5
-    },
-    {
-      "image": "https://cdn.myanimelist.net/images/anime/6/73245l.webp",
-      "title": "One Piece",
-      "score": 8.68,
-      "status": "Currently Airing",
-      "episodes": null,
-      "genres": [
-        {
-          "mal_id": 1,
-          "type": "anime",
-          "name": "Action",
-          "url": "https://myanimelist.net/anime/genre/1/Action"
-        },
-        {
-          "mal_id": 2,
-          "type": "anime",
-          "name": "Adventure",
-          "url": "https://myanimelist.net/anime/genre/2/Adventure"
-        },
-        {
-          "mal_id": 10,
-          "type": "anime",
-          "name": "Fantasy",
-          "url": "https://myanimelist.net/anime/genre/10/Fantasy"
-        }
-      ],
-      "year": 1999,
-      "synopsis": "Gol D. Roger was known as the \"Pirate King,\" the strongest and most infamous being to have sailed the Grand Line. The capture and execution of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece—which promises an unlimited amount of riches and fame—and quite possibly the pinnacle of glory and the title of the Pirate King.\n\nEnter Monkey D. Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy's reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach the most coveted of all fortunes—One Piece.\n\n[Written by MAL Rewrite]",
-      "rating": "PG-13 - Teens 13 or older",
-      "apiID": 21,
-      "id": 6
-    },
-    {
-      "image": "https://cdn.myanimelist.net/images/manga/1/272410l.webp",
-      "title": "Tsubasa: RESERVoir CHRoNiCLE",
-      "score": 8.31,
-      "status": "Finished",
-      "chapters": 233,
-      "volumes": 28,
+      "image": "https://cdn.myanimelist.net/images/manga/1/157897l.webp",
+      "title": "Berserk",
+      "score": 9.46,
+      "status": "Publishing",
+      "chapters": null,
+      "volumes": null,
       "author": [
         {
-          "mal_id": 1877,
+          "mal_id": 1868,
           "type": "people",
-          "name": "CLAMP",
-          "url": "https://myanimelist.net/people/1877/CLAMP"
+          "name": "Miura, Kentarou",
+          "url": "https://myanimelist.net/people/1868/Kentarou_Miura"
+        },
+        {
+          "mal_id": 49592,
+          "type": "people",
+          "name": "Studio Gaga",
+          "url": "https://myanimelist.net/people/49592/Studio_Gaga"
         }
       ],
-      "synopsis": "Warmhearted Syaoran has always been friends with Sakura—the princess of the Clow Kingdom who holds an extraordinary power capable of changing the world. When a mysterious man attempts to monopolize Sakura's ability, her memories scatter throughout different worlds in the form of feathers. To save Sakura, Syaoran seeks help from the Dimensional Witch and meets two other travelers—Kurogane and Fai D. Flourite. Kurogane, a capable fighter and ninja, has been banished from his homeworld and wishes to return. In contrast, Fai, a magician from Celes, wants to traverse different worlds to avoid his home and past. As the price to cross dimensions, each of the three must sacrifice their most valued possession. For Sakura's sake, Syaoran agrees to give away their relationship as payment to the Dimensional Witch. And with firm determination, Syaoran, Kurogane, and Fai begin journeying through numerous worlds to fight against their ill-fated destinies. [Written by MAL Rewrite]",
-      "apiID": 9,
-      "id": 7
+      "synopsis": "Guts, a former mercenary now known as the \"Black Swordsman,\" is out for revenge. After a tumultuous childhood, he finally finds someone he respects and believes he can trust, only to have everything fall apart when this person takes away everything important to Guts for the purpose of fulfilling his own desires. Now marked for death, Guts becomes condemned to a fate in which he is relentlessly pursued by demonic beings. Setting out on a dreadful quest riddled with misfortune, Guts, armed with a massive sword and monstrous strength, will let nothing stop him, not even death itself, until he is finally able to take the head of the one who stripped him—and his loved one—of their humanity. [Written by MAL Rewrite] Included one-shot: Volume 14: Berserk: The Prototype",
+      "apiID": 2,
+      "id": 1
+    },
+    {
+      "image": "https://cdn.myanimelist.net/images/manga/2/250313l.webp",
+      "title": "Hajime no Ippo",
+      "score": 8.69,
+      "status": "Publishing",
+      "chapters": null,
+      "volumes": null,
+      "author": [
+        {
+          "mal_id": 1876,
+          "type": "people",
+          "name": "Morikawa, George",
+          "url": "https://myanimelist.net/people/1876/George_Morikawa"
+        }
+      ],
+      "synopsis": "Makunouchi Ippo is a 16-year-old high school student who helps his mother run the family business. His hefty workload impedes on his social life, making him an easy target for bullies. One day, while being beaten up by a group of high school students, Ippo is saved by a boxer named Mamoru Takamura, and is brought to the Kamogawa Boxing Gym. This afterschool bullying session turns his life around for the better as Ippo discovers his latent talent for boxing and decides to practice the sport professionally. However, Mamoru doubts Ippo's determination and assigns him a task deemed impossible to complete, but the resolute Ippo trains tirelessly to fulfill his mission. Along the way, he finds out what it means to attain true strength while making new friends and fighting formidable foes. [Written by MAL Rewrite]",
+      "apiID": 7,
+      "id": 2
     }
   ]
 }

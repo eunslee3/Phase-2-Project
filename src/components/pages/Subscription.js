@@ -34,7 +34,7 @@ function Subscription(){
         
         <div className="subscription-container">
           <div className="subscription">
-            <h2>Subscription</h2>
+            <h2>Login</h2>
           <form onSubmit={handleSubmit}>
           <label>Name:</label>
               <input 

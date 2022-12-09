@@ -2,7 +2,7 @@ import React from 'react'
 import SearchCard from './SearchCard'
 import SearchMangaCard from './SearchMangaCard'
 
-function SearchContainer({manga, animeList, filteredAnimeCard, filteredMangaCard}) {
+function SearchContainer({tgl, manga, animeList, filteredAnimeCard, filteredMangaCard}) {
     const renderAnimeCard = filteredAnimeCard?.map((anime) => {
         const genre = anime.genres.map((genre) => {
             return genre.name
@@ -41,10 +41,9 @@ function SearchContainer({manga, animeList, filteredAnimeCard, filteredMangaCard
 
     return (
         <div>
-            <h2 id="anime-card-category">Search Results:</h2>
+            <h2 id="anime-card-category">Search Results: {tgl ? "Animes" : "Mangas"}</h2>
             <div className="anime-container">
-                {renderAnimeCard}
-                {renderMangaCard}
+                {tgl ? renderAnimeCard : renderMangaCard}
             </div>
         </div>
     )
