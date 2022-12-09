@@ -348,6 +348,7 @@ label{
   box-shadow: 5px 6px 10px #090b0b;
 }
 .subscription label {
+  color:#f1356d;
   text-align: left;
   display: block;
   color: #090b0b;

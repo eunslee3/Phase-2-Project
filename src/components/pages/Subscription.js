@@ -5,7 +5,7 @@ import Header from '../Header'
 function Subscription(){
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    // const [dob, setDob] = useState('');
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -31,6 +31,7 @@ function Subscription(){
     return (
       <div>
         <Header/>
+        
         <div className="subscription-container">
           <div className="subscription">
             <h2>Login</h2>
@@ -49,15 +50,9 @@ function Subscription(){
             onChange={(e) => setEmail(e.target.value)}
           ></textarea>
 
-          {/* <label>DOB:</label>
-              <input 
-              type="text"
-              required
-              value={dob}
-              onChange={(e) => setDob(e.target.value)}
-              /> */}
+          
               <button>Subscribe</button>
-              {/* <p>{dob}</p> */}
+            
             </form>
           </div>
         </div>

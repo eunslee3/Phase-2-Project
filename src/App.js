@@ -14,6 +14,9 @@ import SearchResults from './components/pages/SearchResults'
 import MangaPage from './components/pages/MangaPage'
 import MangaDescription from './components/pages/MangaDescription'
 
+// import { Login } from "./Login"
+// import { Register } from "./Register"
+
 const animesApi = "https://api.jikan.moe/v4/anime"
 const recommendedAnimesApi = "https://api.jikan.moe/v4/recommendations/anime"
 const mangaApi = "https://api.jikan.moe/v4/manga"
@@ -25,6 +28,7 @@ function App() {
   const [recommendedAnimes, setRecommendedAnimes] = useState([])
   const [mangas, setMangas] = useState([])
   const [search, setSearch] = useState("")
+  // const [currentForm, setCurrentForm] = useState('login')
 
   const filteredAnimeCard = animeList.filter((anime) => 
       anime.title.toLowerCase().includes(search.toLowerCase()))
@@ -55,6 +59,10 @@ function App() {
 
     return (
       <div>
+        {/* <Login />
+        {
+          currentForm === "login" ? <Login /> : <Register />
+        } */}
         <Switch>
 
           <Route exact path="/">
