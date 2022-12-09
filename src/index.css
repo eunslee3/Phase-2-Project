@@ -49,6 +49,14 @@ body::-webkit-scrollbar {
   font-size: 16px;
   border-radius: 5px;
 }
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+
+
 /* ------------------- main page styling ------------------- */
 .anime-card {
   display: column;
@@ -415,6 +423,7 @@ label{
   border-radius: 10px;
   flex-direction: row;
   padding: 20px;
+  height: auto;
   background-color: #121D1D;
   box-shadow: 5px 6px 10px #090b0b;
   margin-top: 10px;
@@ -454,6 +463,12 @@ label{
   border-radius: 5px;
 }
 
+.my-list-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+
 #link-btn {
   text-align: center;
 }
@@ -469,6 +484,12 @@ label{
   font-size: 14px;
   border-radius: 5px;
   margin-left: -20px;
+}
+
+.link-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
 }
 
 .switch {
@@ -543,4 +564,15 @@ input:checked + .slider:before {
 .tgl-label {
   margin-right: 10px;
   font-size: 1.5em;
+}
+
+.my-list-label {
+  color: white;
+
+}
+
+.label-container {
+  width: 100vw;
+  height: 20px;
+  margin-left: 10px;
 }
