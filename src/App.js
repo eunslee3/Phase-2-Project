@@ -21,6 +21,8 @@ const animesApi = "https://api.jikan.moe/v4/anime"
 const recommendedAnimesApi = "https://api.jikan.moe/v4/recommendations/anime"
 const mangaApi = "https://api.jikan.moe/v4/manga"
 
+// Project Presented!
+
 function App() {
   const [animeList, setAnimeList] = useState([])
   const [recommendedAnimes, setRecommendedAnimes] = useState([])
