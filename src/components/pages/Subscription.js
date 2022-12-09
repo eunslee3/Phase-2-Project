@@ -31,6 +31,7 @@ function Subscription(){
     return (
       <div>
         <Header/>
+        
         <div className="subscription-container">
           <div className="subscription">
             <h2>Subscription</h2>

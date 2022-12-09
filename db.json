@@ -4,55 +4,10 @@
       "name": "Sandy",
       "email": "sandyzhang142@gmail.com",
       "id": 1
-    },
-    {
-      "name": "sandy",
-      "email": "nbasandy@gmail.com\n",
-      "id": 2
     }
   ],
   "saved": [
     {
-
-      "id": 0
-    },
-    {
-      "image": "https://cdn.myanimelist.net/images/anime/11/73923l.webp",
-      "title": "Hachimitsu to Clover",
-      "score": 8.01,
-      "status": "Finished Airing",
-      "episodes": 24,
-      "genres": [
-        {
-          "mal_id": 4,
-          "type": "anime",
-          "name": "Comedy",
-          "url": "https://myanimelist.net/anime/genre/4/Comedy"
-        },
-        {
-          "mal_id": 8,
-          "type": "anime",
-          "name": "Drama",
-          "url": "https://myanimelist.net/anime/genre/8/Drama"
-        },
-        {
-          "mal_id": 22,
-          "type": "anime",
-          "name": "Romance",
-          "url": "https://myanimelist.net/anime/genre/22/Romance"
-        },
-        {
-          "mal_id": 36,
-          "type": "anime",
-          "name": "Slice of Life",
-          "url": "https://myanimelist.net/anime/genre/36/Slice_of_Life"
-        }
-      ],
-      "year": 2005,
-      "synopsis": "Yuuta Takemoto, a sophomore at an arts college, shares a cheap apartment with two seniors—the eccentric Shinobu Morita, who keeps failing to graduate due to his absenteeism, and the sensible Takumi Mayama, who acts as a proper senior to Takemoto, often looking out for him.\n\nTakemoto had not given much thought to his future until one fine spring day, when he meets the endearing Hagumi Hanamoto and falls in love at first sight. Incredibly gifted in the arts, Hagumi enrolls in Takemoto's university and soon befriends the popular pottery student Ayumi Yamada. Ayumi is already well acquainted with the three flatmates and secretly harbors deep feelings for one of them.\n\nHachimitsu to Clover is a heartwarming tale of youth, love, soul-searching, and self-discovery, intricately woven through the complex relationships between five dear friends.\n\n[Written by MAL Rewrite]",
-      "rating": "PG-13 - Teens 13 or older",
-      "id": 1
-
       "image": "https://cdn.myanimelist.net/images/anime/13/17405l.webp",
       "title": "Naruto",
       "score": 7.98,
@@ -115,7 +70,6 @@
       "rating": "PG - Children",
       "apiID": 8,
       "id": 4
-
     },
     {
       "image": "https://cdn.myanimelist.net/images/anime/7/20310l.webp",
@@ -158,18 +112,6 @@
       "year": 1998,
       "synopsis": "Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. The reason: he's a merciless villain who lays waste to all those that oppose him and flattens entire cities for fun, garnering him the title \"The Humanoid Typhoon.\" He leaves a trail of death and destruction wherever he goes, and anyone can count themselves dead if they so much as make eye contact—or so the rumors say. In actuality, Vash is a huge softie who claims to have never taken a life and avoids violence at all costs.\n\nWith his crazy doughnut obsession and buffoonish attitude in tow, Vash traverses the wasteland of the planet Gunsmoke, all the while followed by two insurance agents, Meryl Stryfe and Milly Thompson, who attempt to minimize his impact on the public. But soon, their misadventures evolve into life-or-death situations as a group of legendary assassins are summoned to bring about suffering to the trio. Vash's agonizing past will be unraveled and his morality and principles pushed to the breaking point.\n\n[Written by MAL Rewrite]",
       "rating": "PG-13 - Teens 13 or older",
-
-      "id": 2
-    },
-    {
-      "image": "https://cdn.myanimelist.net/images/anime/7/21569l.webp",
-      "title": "Bouken Ou Beet",
-      "score": 6.95,
-      "status": "Finished Airing",
-      "episodes": 52,
-      "genres": [
-        {
-
       "apiID": 6,
       "id": 5
     },
@@ -187,7 +129,6 @@
           "url": "https://myanimelist.net/anime/genre/1/Action"
         },
         {
-
           "mal_id": 2,
           "type": "anime",
           "name": "Adventure",
@@ -198,20 +139,6 @@
           "type": "anime",
           "name": "Fantasy",
           "url": "https://myanimelist.net/anime/genre/10/Fantasy"
-
-        },
-        {
-          "mal_id": 37,
-          "type": "anime",
-          "name": "Supernatural",
-          "url": "https://myanimelist.net/anime/genre/37/Supernatural"
-        }
-      ],
-      "year": 2004,
-      "synopsis": "It is the dark century and the people are suffering under the rule of the devil, Vandel, who is able to manipulate monsters. The Vandel Busters are a group of people who hunt these devils, and among them, the Zenon Squad is known to be the strongest busters on the continent. A young boy, Beet, dreams of joining the Zenon Squad. However, one day, as a result of Beet's fault, the Zenon squad was defeated by the devil, Beltose. The five dying busters sacrificed their life power into their five weapons, Saiga. After giving their weapons to Beet, they passed away. Years have passed since then and the young Vandel Buster, Beet, begins his adventure to carry out the Zenon Squad's will to put an end to the dark century.",
-      "rating": "PG - Children",
-      "id": 3
-
         }
       ],
       "year": 1999,
@@ -238,7 +165,6 @@
       "synopsis": "Warmhearted Syaoran has always been friends with Sakura—the princess of the Clow Kingdom who holds an extraordinary power capable of changing the world. When a mysterious man attempts to monopolize Sakura's ability, her memories scatter throughout different worlds in the form of feathers. To save Sakura, Syaoran seeks help from the Dimensional Witch and meets two other travelers—Kurogane and Fai D. Flourite. Kurogane, a capable fighter and ninja, has been banished from his homeworld and wishes to return. In contrast, Fai, a magician from Celes, wants to traverse different worlds to avoid his home and past. As the price to cross dimensions, each of the three must sacrifice their most valued possession. For Sakura's sake, Syaoran agrees to give away their relationship as payment to the Dimensional Witch. And with firm determination, Syaoran, Kurogane, and Fai begin journeying through numerous worlds to fight against their ill-fated destinies. [Written by MAL Rewrite]",
       "apiID": 9,
       "id": 7
-
     }
   ]
 }

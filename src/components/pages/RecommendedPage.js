@@ -1,23 +1,16 @@
 import React from 'react'
 import Header from '../Header'
 import RecommendedContainer from '../recommendedAnimes/RecommendedContainer'
-import SearchRecommended from '../SearchRecommended'
+// import SearchRecommended from '../SearchRecommended'
 
 function RecommendedPage({recommendedAnimes, renderRecommendedAnime}){
-
-    const [searchRecommend, setSearchRecommend] = useState("")
-
-      const recommendFliter = recommendedAnimes.filter((anime) => 
-      anime.title.toLowerCase().includes(searchRecommend.toLowerCase()))
-
     console.log(recommendedAnimes)
-
 
     return (
         <div className="main-container">
             <Header renderRecommendedAnime={renderRecommendedAnime}/>
-            <SearchRecommended setSearchRecommend={setSearchRecommend}/>
-            <RecommendedContainer recommendedAnimes={recommendFliter}/>
+            {/* <SearchRecommended setSearchRecommend={setSearchRecommend}/> */}
+            <RecommendedContainer recommendedAnimes={recommendedAnimes}/>
         </div>
     )
 }
