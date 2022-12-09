@@ -27,10 +27,7 @@ function AnimeContainer({animeList}) {
 
     return (
         <div>
-            <h2 id="anime-card-category">Anime</h2>
-            {/* <div id="see-more">
-                <h3>See More</h3>
-            </div> */}
+            <h2 id="new-anime-card-category">Anime</h2>
             <div className="anime-container">
                 {renderAnimeCard}
             </div>

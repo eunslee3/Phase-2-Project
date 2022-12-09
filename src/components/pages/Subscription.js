@@ -22,6 +22,8 @@ function Subscription(){
         })
         .then((res)=> res.json())
         .then(() => { console.log('new subscription added');
+        setEmail("")
+        setName("")
     })
 
     }

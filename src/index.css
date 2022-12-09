@@ -54,19 +54,22 @@ body::-webkit-scrollbar {
   display: column;
   height: 200px;
   width: 150px;
-  border: 2px solid white;
   margin: 10px;
   margin-top: 50px;
   transition: transform 450ms;
+  text-align:center;
+  padding-bottom: 50px;
 }
 .anime-card:hover {
   transform: scale(1.08);
 }
 .anime-card-image {
+  border: 2px solid white;
   width: 150px;
   height: 200px;
 }
 #anime-card-category {
+  top: 400px;
   margin-top: 40px;
   margin-left: 30px;
   margin-bottom: -30px;
@@ -75,11 +78,35 @@ body::-webkit-scrollbar {
   text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
 }
 
+#new-anime-card-category {
+  margin-top: 461px;
+  margin-left: 30px;
+  margin-bottom: -30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #4CAF50;
+  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+
+
 #anime-card-title {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
 .anime-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: left;
+  cursor: pointer;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  margin-bottom: 50px;
+  padding-bottom: 150px;
+  width: 100vw;
+}
+
+.top-rated-container {
   display: flex;
   float: left;
   cursor: pointer;
@@ -87,14 +114,10 @@ body::-webkit-scrollbar {
   overflow-x: scroll;
   transition: all 0.2s;
   transform: scale(0.98);
-  white-space: pre-wrap;
-  margin-bottom: 50px;
   padding-bottom: 100px;
+  width: 100vw;
 }
 
-.anime-container::-webkit-scrollbar {
-  display: none;
-}
 .top-rated-card {
   display: column;
   height: 250px;
@@ -103,6 +126,7 @@ body::-webkit-scrollbar {
   margin: 0.5%;
   margin-top: 2%;
   transition: transform 450ms;
+  text-align: center;
 }
 .top-rated-card:hover {
   transform: scale(1.08);
@@ -111,17 +135,7 @@ body::-webkit-scrollbar {
   width: 200px;
   height: 250px;
 }
-.top-rated-container {
-  display: flex;
-  float: left;
-  cursor: grab;
-  overflow: auto;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  margin-bottom: 50px;
-  padding-bottom: 100px;
-  
-}
+
 .top-rated-container::-webkit-scrollbar {
   display: none;
 }
@@ -137,8 +151,31 @@ body::-webkit-scrollbar {
 .recommended-container::-webkit-scrollbar {
   display: none;
 }
-.nav {
-    display: flex;
+
+.rec-card {
+  display: column;
+  height: 200px;
+  width: 150px;
+  margin: 10px;
+  margin-top: 50px;
+  transition: transform 450ms;
+  text-align:center;
+  padding-bottom: 50px;
+}
+
+.rec-card-image {
+  border: 2px solid white;
+  width: 150px;
+  height: 200px;
+}
+#rec-card-category {
+  top: 400px;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: -30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #4CAF50;
+  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
 }
 
 /* --------- Pop Up Description Styling ----------- */
@@ -156,10 +193,28 @@ body::-webkit-scrollbar {
     left: 25%;
     top: 20%;
     width: 50%;
-    height: 50%;
+    height: 25%;
     overflow: auto;
     border: 2px solid red;
     border-radius: 10px;
+}
+
+/* child */
+.description-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#rating, #score {
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.description-info-2 {
+  width: 550px;
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .nav-bar-title {
@@ -186,6 +241,9 @@ label{
 }
 
 .nav {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
   color: white;
   display: flex;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -196,6 +254,15 @@ label{
 .site-title {
   font-size: 2rem;
 }
+
+.nav-items {
+  width: 100px;
+}
+
+#specific-item{
+  margin-left: 40px;
+}
+
 .nav a {
   color: inherit;
   text-decoration: none;
@@ -204,6 +271,7 @@ label{
   align-items: center;
   padding: .25rem;
 }
+
 .nav li.active {
   background-color: black;
 }
@@ -219,11 +287,16 @@ label{
 }
 
 /* Search Bar Css */
-/* body {
-  
-  font-size: 1.3rem;
- 
-} */
+.searchbar {
+  height: 30px;
+  margin-top: 39px;
+  margin-left: 400px;
+}
+
+.search-input {
+  width: 300px;
+}
+
 .searchbar {
   display: flex;
   
@@ -270,6 +343,7 @@ label{
   color:#f1356d;
   text-align: left;
   display: block;
+  color: #090b0b;
 }
 .subscription h2 {
   font-size: 40px;
@@ -280,7 +354,8 @@ label{
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #090b0b;
+  border-radius: 7px;
   display: block;
 }
 .subscription button {
@@ -325,5 +400,74 @@ label{
 .description-info-2 {
   width: 550px;
   padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
+
+.my-list-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.my-card-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #586c6c;
+  border-radius: 10px;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #121D1D;
+  box-shadow: 5px 6px 10px #090b0b;
+  margin-top: 10px;
+}
+
+.my-card-list {
+    height: auto;
+    width: auto;
+    margin: 10px;
+    margin-top: 50px;
+    transition: transform 450ms;
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  text-align: center;
+  align-items: center;
+}
+
+#my-card-title {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 0.875em;
+}
+
+.my-list-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#link-btn {
+  text-align: center;
+}
+
+.link-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: -20px;
 }
