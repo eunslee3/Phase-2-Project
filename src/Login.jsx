@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 
 export const Login = () => {
-    const [email, setEmail] = useState('');
+    const [email, setEmail] = useState(null);
     const [pass, setPass] = useState('');
     
 
