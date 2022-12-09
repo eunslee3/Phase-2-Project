@@ -42,6 +42,7 @@ function AnimeDescription() {
                     episodes={info.episodes}
                     genres={info.genres}
                     year={info.year}
+                    type={info.type}
                     synopsis={info.synopsis}
                     rating={info.rating}
                     id={info.mal_id} />}

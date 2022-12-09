@@ -12,6 +12,7 @@ import AnimeDescription from './components/pages/AnimeDescription'
 import MyList from './components/mylist/MyList'
 import SearchResults from './components/pages/SearchResults'
 import MangaPage from './components/pages/MangaPage'
+import MangaDescription from './components/pages/MangaDescription'
 
 const animesApi = "https://api.jikan.moe/v4/anime"
 const recommendedAnimesApi = "https://api.jikan.moe/v4/recommendations/anime"
@@ -25,6 +26,9 @@ function App() {
 
   const filteredAnimeCard = animeList.filter((anime) => 
       anime.title.toLowerCase().includes(search.toLowerCase()))
+
+    const filteredMangaCard = mangas.filter((manga) => 
+      manga.title.toLowerCase().includes(search.toLowerCase()))
 
 
   function renderRecommendedAnime() {
@@ -71,12 +75,16 @@ function App() {
             <AnimeDescription />
           </Route>
 
+          <Route path="/manga/description/:id">
+            <MangaDescription />
+          </Route>
+
           <Route path="/mylist">
             <MyList />
           </Route>
 
           <Route path="/searchresults">
-            <SearchResults filteredAnimeCard={filteredAnimeCard} animeList={animeList}/>
+            <SearchResults filteredMangaCard={filteredMangaCard} filteredAnimeCard={filteredAnimeCard} recommendedAnimes={recommendedAnimes} mangas={mangas} animeList={animeList}/>
           </Route>
 
           <Route path="/mangas">

@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Header from '../Header'
 import SearchContainer from '../search/SearchContainer'
 import RecommendedContainer from '../recommendedAnimes/RecommendedContainer'
 
-function SearchResults({filteredAnimeCard, animeList}) {
+function SearchResults({filteredMangaCard, filteredAnimeCard, animeList, mangas, recommendedAnimes}) {
     return (
         <div className='main-container'>
             <Header />
-            <SearchContainer filteredAnimeCard={filteredAnimeCard} animeList={animeList}/>
+            <input type="checkbox"></input>
+            <SearchContainer filteredMangaCard={filteredMangaCard} filteredAnimeCard={filteredAnimeCard} animeList={animeList} mangas={mangas} recommendedAnimes={recommendedAnimes}/>
         </div>
     )
 }

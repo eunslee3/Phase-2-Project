@@ -8,7 +8,7 @@ function MangaCard({title, image, status, score, id}) {
 
     return (
         <div className="anime-card">
-            <Link to={`/description/${id}`}>
+            <Link to={`/manga/description/${id}`}>
                 <img key={id} className="anime-card-image" src={image} />
             </Link>     
             <h3 id="anime-card-title">{title}</h3>

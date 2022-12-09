@@ -1,7 +1,8 @@
 import React from 'react'
 import SearchCard from './SearchCard'
+import SearchMangaCard from './SearchMangaCard'
 
-function SearchContainer({animeList, filteredAnimeCard}) {
+function SearchContainer({manga, animeList, filteredAnimeCard, filteredMangaCard}) {
     const renderAnimeCard = filteredAnimeCard?.map((anime) => {
         const genre = anime.genres.map((genre) => {
             return genre.name
@@ -24,11 +25,26 @@ function SearchContainer({animeList, filteredAnimeCard}) {
         )
     })
 
+    const renderMangaCard = filteredMangaCard?.map((manga) => {
+        return (
+            <SearchMangaCard 
+                key={manga.mal_id}
+                title={manga.title}
+                image={manga.images.webp.large_image_url}
+                status={manga.status}
+                score={manga.score}
+                synopsis={manga.synopsis}
+                id={manga.mal_id}
+            />
+        )
+    })
+
     return (
         <div>
             <h2 id="anime-card-category">Search Results:</h2>
             <div className="anime-container">
                 {renderAnimeCard}
+                {renderMangaCard}
             </div>
         </div>
     )
