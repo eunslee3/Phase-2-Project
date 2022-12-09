@@ -1,21 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
 import MainContainer from '../animes/MainContainer'
 import Header from '../Header'
-import Search from '../Search'
 
-function AnimePage({animeList, renderRecommendedAnime}){
-    const [search, setSearch] = useState("")
-
-    const filteredAnimeCard = animeList.filter((anime) => 
-        anime.title.toLowerCase().includes(search.toLowerCase()))
-    
+function AnimePage({setSearch, animeList, renderRecommendedAnime, filteredAnimeCard}){
 
     return (
         <div>
-            <Header renderRecommendedAnime={renderRecommendedAnime}/>
-            <Search setSearch = {setSearch}/>
-            <MainContainer animeList={filteredAnimeCard} />
-
+            <Header setSearch={setSearch} renderRecommendedAnime={renderRecommendedAnime}/>
+            <MainContainer animeList={animeList} />
         </div>
     )
 }

@@ -1,15 +1,14 @@
 import React from 'react'
-import AnimeCard from './AnimeCard'
+import SearchCard from './SearchCard'
 
-
-function AnimeContainer({animeList}) {
-    const renderAnimeCard = animeList?.map((anime) => {
+function SearchContainer({animeList, filteredAnimeCard}) {
+    const renderAnimeCard = filteredAnimeCard?.map((anime) => {
         const genre = anime.genres.map((genre) => {
             return genre.name
         })
         
         return (
-            <AnimeCard 
+            <SearchCard 
                 key={anime.mal_id}
                 title={anime.title_english}
                 backupTitle={anime.title}
@@ -27,7 +26,7 @@ function AnimeContainer({animeList}) {
 
     return (
         <div>
-            <h2 id="new-anime-card-category">Anime</h2>
+            <h2 id="anime-card-category">Search Results:</h2>
             <div className="anime-container">
                 {renderAnimeCard}
             </div>
@@ -35,4 +34,4 @@ function AnimeContainer({animeList}) {
     )
 }
 
-export default AnimeContainer
+export default SearchContainer

@@ -19,10 +19,9 @@ function Description({image, title, score, status, episodes, genres, year, synop
                 year: year,
                 synopsis: synopsis,
                 rating: rating,
+                apiID: id
         })
         })
-        .then(r => r.json())
-        .then(data => console.log(data))
     }
 
     return (
