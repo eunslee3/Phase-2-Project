@@ -1,15 +1,15 @@
 import React from 'react';
 
-function SearchRecommended({setSearch}){
+function SearchRecommended({setSearchRecommend}){
     function handleChange(e){
-        setSearch(e.target.value);
+        setSearchRecommend(e.target.value);
     };
 
     return(
         <div className="searchbar">
         
         <label 
-            htmlFor="search">Search R Anime:
+            htmlFor="search">Search Recommended Anime:
         
         </label>
         <input
