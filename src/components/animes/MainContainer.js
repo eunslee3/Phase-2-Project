@@ -10,10 +10,8 @@ function MainContainer({animeList, recommendedAnimesApi, setRecommendedAnimes, r
 
     return (
         <div className="main-container">
-           
-            <AnimeContainer animeList={animeList}/>
             <TopRatedContainer animeList={animeList}/>
-            
+            <AnimeContainer animeList={animeList}/>
         </div>
     )
 }
